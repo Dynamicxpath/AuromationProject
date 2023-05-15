@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.Automation.HomePageTest">
+        <methods>
+          <include name="setUP"/>
+          <include name="test3"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Automation.HomePageTest -->
+      <class name="com.Automation.OrangeHrmTest">
+        <methods>
+          <include name="setUP"/>
+          <include name="loginLogoutTest" invocation-numbers="1 0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Automation.OrangeHrmTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

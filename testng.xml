@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" data-provider-thread-count="1" >
+    <listeners>
+        <listener class-name="com.girijaAutomation.Listners.ListenerClass"/>
+        <listener class-name="com.girijaAutomation.Listners.MethodInterceptor"/>
+        <listener class-name="com.girijaAutomation.Listners.AnnotationTransformer"/>
+    </listeners>
+    <test name="parallelTest" thread-count="1" parallel="methods" >
+        <classes>
+            <class name="com.Automation.AmazonDemoTest">
+            <methods>
+                <include name=" AmazonDemoTest"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
